@@ -6,6 +6,8 @@ buildscript {
         // Versions for all the dependencies we plan to use.
         android_gradle_plugin_version = "3.6.3"
         constraint_layout_version = "2.0.0"
+        hilt_version = "1.0.0-alpha02"
+        hilt_android_version = "2.28.1-alpha"
         kotlin_version = "1.4.0"
         kotlin_coroutines_version = "1.1.0"
         lifecycle_version = "2.2.0"
@@ -24,6 +26,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_android_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

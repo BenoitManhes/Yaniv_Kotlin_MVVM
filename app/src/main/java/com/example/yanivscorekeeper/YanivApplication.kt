@@ -1,4 +1,4 @@
-package com.example.yanivscorekeeper.application
+package com.example.yanivscorekeeper
 
 import android.app.Application
 import timber.log.Timber
