@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardButtonView">
+        <attr name="text" format="reference" />
+        <attr name="image" format="reference" />
+        <attr name="textBackground" format="reference" />
+        <attr name="paddingTextRatio" format="float" />
+    </declare-styleable>
+</resources>
