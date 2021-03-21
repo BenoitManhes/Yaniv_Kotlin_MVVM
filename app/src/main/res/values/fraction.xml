@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Home -->
+    
+<!-- Player Selection -->
+    <fraction name="guideline_top_player_card">0.05</fraction>
+    <fraction name="guideline_bottom_player_card">0.95</fraction>
+    <fraction name="guideline_start_avatar_player_card">0.1</fraction>
+    <fraction name="guideline_end_avatar_player_card">0.9</fraction>
+    <fraction name="guideline_start_pseudo_player_card">0.05</fraction>
+    <fraction name="guideline_end_pseudo_player_card">0.95</fraction>
+
+</resources>

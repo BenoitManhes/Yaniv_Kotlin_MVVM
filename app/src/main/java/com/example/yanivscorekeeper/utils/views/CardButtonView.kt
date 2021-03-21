@@ -1,4 +1,4 @@
-package com.example.yanivscorekeeper.utils
+package com.example.yanivscorekeeper.utils.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -25,6 +25,10 @@ class CardButtonView @JvmOverloads constructor(
         setupAttributes(attrs)
     }
 
+    override fun setOnClickListener(l: OnClickListener?) {
+        binding.cardViewLayout.setOnClickListener(l)
+    }
+
     private fun setupAttributes(attrs: AttributeSet?) {
         // Obtain a typed array of attributes
         val typedArray = context.theme.obtainStyledAttributes(
@@ -47,7 +51,7 @@ class CardButtonView @JvmOverloads constructor(
             @DrawableRes
             val backgroundTextRes = typedArray.getResourceId(
                 R.styleable.CardButtonView_textBackground,
-                R.drawable.rect_secondary_radius,
+                R.drawable.background_secondary_radius,
             )
             val paddingRatio = typedArray.getFloat(R.styleable.CardButtonView_paddingTextRatio, 0.15f)
 
@@ -67,5 +71,4 @@ class CardButtonView @JvmOverloads constructor(
             typedArray.recycle()
         }
     }
-
 }

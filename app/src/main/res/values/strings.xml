@@ -4,4 +4,5 @@
     <string name="home_button_new">New\nGame</string>
     <string name="home_button_resume">Resume</string>
     <string name="home_button_rules">Yaniv Rules</string>
+    <string name="fragment_player_selection_start_button">Start</string>
 </resources>

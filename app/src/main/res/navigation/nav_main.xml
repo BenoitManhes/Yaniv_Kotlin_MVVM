@@ -9,5 +9,13 @@
         android:id="@+id/homeFragment"
         android:name="com.example.yanivscorekeeper.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_playerSelectionFragment"
+            app:destination="@id/playerSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerSelectionFragment"
+        android:name="com.example.yanivscorekeeper.ui.playerselection.PlayerSelectionFragment"
+        android:label="PlayerSelectionFragment" />
 </navigation>

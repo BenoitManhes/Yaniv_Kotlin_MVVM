@@ -1,4 +1,4 @@
-package com.example.yanivscorekeeper.utils
+package com.example.yanivscorekeeper.utils.views
 
 import android.content.Context
 import android.text.Spannable
@@ -6,6 +6,7 @@ import android.text.SpannableString
 import android.text.style.RelativeSizeSpan
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
+import com.example.yanivscorekeeper.utils.Constants
 
 /**
  * Simplicity font doesn't take into account upper case

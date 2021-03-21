@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPlayerCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground" >
+
+    <ImageView
+        android:id="@+id/ivVerso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/carte_player_verso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutRecto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_player_recto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/guideline_start_avatar_player_card" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/guideline_end_avatar_player_card" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end_avatar"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvPseudoTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pseudo"
+            tools:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/tvPseudoBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Pseudo"
+            tools:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/ivSymbolTop"
+            android:layout_width="16dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="@id/tvPseudoTop"
+            app:layout_constraintTop_toBottomOf="@+id/tvPseudoTop"
+            app:srcCompat="@drawable/ic_spades" />
+
+        <ImageView
+            android:id="@+id/ivSymbolBottom"
+            android:layout_width="16dp"
+            android:layout_height="0dp"
+            android:rotation="180"
+            android:layout_marginEnd="@dimen/spacing_small"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="@id/tvPseudoBottom"
+            app:layout_constraintBottom_toTopOf="@+id/tvPseudoBottom"
+            app:srcCompat="@drawable/ic_spades" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

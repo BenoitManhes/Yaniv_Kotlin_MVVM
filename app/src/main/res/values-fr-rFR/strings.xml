@@ -5,4 +5,5 @@
     <string name="home_button_new">Nouvelle Partie</string>
     <string name="home_button_resume">Reprendre</string>
     <string name="home_button_rules">Règles du Yaniv</string>
+    <string name="fragment_player_selection_start_button">Commencer</string>
 </resources>
